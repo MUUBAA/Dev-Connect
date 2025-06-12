@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:52523",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect\\dev-connect.Server\\..\\dev-connect.client",
+"WorkingDirectory": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\..\\dev-connect.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }
