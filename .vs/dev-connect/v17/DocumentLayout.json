@@ -1,12 +1,139 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\utils\\componentregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\utils\\componentregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\dev-connect.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\dev-connect.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\data\\dto\\paginationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\data\\dto\\paginationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\utils\\utilsclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\utils\\utilsclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "dev-connect.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\appsettings.json*",
+              "RelativeToolTip": "dev-connect.Server\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T12:20:32.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "dev-connect.Server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAoAAACALzMzMzMrwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T12:20:21.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dev-connect.Server",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\dev-connect.Server.csproj",
+              "RelativeDocumentMoniker": "dev-connect.Server\\dev-connect.Server.csproj",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\dev-connect.Server.csproj*",
+              "RelativeToolTip": "dev-connect.Server\\dev-connect.Server.csproj*",
+              "ViewState": "AgIAAAEAAAAAZmZmZmYkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-12T11:37:39.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ComponentRegistry.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\ComponentRegistry.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\ComponentRegistry.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\ComponentRegistry.cs",
+              "RelativeToolTip": "dev-connect.Server\\Utils\\ComponentRegistry.cs",
+              "ViewState": "AgIAABcAAAAAmJmZmZkpwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T11:18:50.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaginationResponse.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Dto\\PaginationResponse.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Dto\\PaginationResponse.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Dto\\PaginationResponse.cs",
+              "RelativeToolTip": "dev-connect.Server\\Data\\Dto\\PaginationResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T10:54:45.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UtilsClass.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\UtilsClass.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\UtilsClass.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\UtilsClass.cs",
+              "RelativeToolTip": "dev-connect.Server\\Utils\\UtilsClass.cs",
+              "ViewState": "AgIAABYAAAAAy8zMzMwkwCsAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T10:50:01.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Repositories\\Repository.cs",
+              "RelativeToolTip": "dev-connect.Server\\Data\\Repositories\\Repository.cs",
+              "ViewState": "AgIAABMAAABA//////8hwB8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T10:39:32.898Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
