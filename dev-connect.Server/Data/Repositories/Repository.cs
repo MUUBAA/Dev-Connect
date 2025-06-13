@@ -11,7 +11,7 @@ namespace dev_connect.Server.Data.Repositories
 {
     public class Repository : DbContext
     {
-        public Repository(DbContextOptions options) : base(options)
+        public Repository(DbContextOptions<Repository> options) : base(options)
         {
         }
 

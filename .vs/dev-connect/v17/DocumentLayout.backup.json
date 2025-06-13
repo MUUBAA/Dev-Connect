@@ -1,12 +1,326 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\services\\cache\\cacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\services\\cache\\cacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\utils\\authprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\utils\\authprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\services\\authservice\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\services\\authservice\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\data\\dto\\jwtuserparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\data\\dto\\jwtuserparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\services\\userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\services\\userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\services\\cache\\cachesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\services\\cache\\cachesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\utils\\swaggerprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\utils\\swaggerprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\utils\\datamigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\utils\\datamigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\utils\\componentregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\utils\\componentregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\dev-connect.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\dev-connect.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\data\\dto\\paginationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\data\\dto\\paginationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\utils\\utilsclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\utils\\utilsclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "dev-connect.Server\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAMAAADgyczMzMwnwAcAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T10:39:28.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthProvider.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\AuthProvider.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\AuthProvider.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\AuthProvider.cs",
+              "RelativeToolTip": "dev-connect.Server\\Utils\\AuthProvider.cs",
+              "ViewState": "AgIAAD4AAAAAJgAAAAD+vz4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T09:58:14.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JWTUserParam.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Dto\\JWTUserParam.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Dto\\JWTUserParam.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Dto\\JWTUserParam.cs",
+              "RelativeToolTip": "dev-connect.Server\\Data\\Dto\\JWTUserParam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T09:40:14.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "dev-connect.Server\\Data\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAYAAABAZWZmZmYxwB0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T08:36:34.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\UserService\\UserService.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Services\\UserService\\UserService.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\UserService\\UserService.cs",
+              "RelativeToolTip": "dev-connect.Server\\Services\\UserService\\UserService.cs",
+              "ViewState": "AgIAAAEAAADAMjMzMzMrwBIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T08:32:47.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\AuthService\\AuthService.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Services\\AuthService\\AuthService.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\AuthService\\AuthService.cs",
+              "RelativeToolTip": "dev-connect.Server\\Services\\AuthService\\AuthService.cs",
+              "ViewState": "AgIAACgAAADAy8zMzMwmwDkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T06:45:45.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CacheSetting.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\Cache\\CacheSetting.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Services\\Cache\\CacheSetting.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\Cache\\CacheSetting.cs",
+              "RelativeToolTip": "dev-connect.Server\\Services\\Cache\\CacheSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T05:57:52.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CacheService.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\Cache\\CacheService.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Services\\Cache\\CacheService.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\Cache\\CacheService.cs",
+              "RelativeToolTip": "dev-connect.Server\\Services\\Cache\\CacheService.cs",
+              "ViewState": "AgIAAC4AAABAAAAAAAAcwD0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T05:57:13.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Program.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Program.cs",
+              "RelativeToolTip": "dev-connect.Server\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAMjMzMzMrwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T05:42:23.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SwaggerProvider.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\SwaggerProvider.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\SwaggerProvider.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\SwaggerProvider.cs",
+              "RelativeToolTip": "dev-connect.Server\\Utils\\SwaggerProvider.cs",
+              "ViewState": "AgIAAAsAAADAx8zMzIwrwCcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T05:16:15.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DataMigration.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\DataMigration.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\DataMigration.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\DataMigration.cs",
+              "RelativeToolTip": "dev-connect.Server\\Utils\\DataMigration.cs",
+              "ViewState": "AgIAAAIAAACQMzMzMzMrwAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T13:15:33.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "dev-connect.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\appsettings.json",
+              "RelativeToolTip": "dev-connect.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T12:20:32.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "dev-connect.Server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAoAAACALzMzMzMrwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T12:20:21.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "dev-connect.Server.csproj",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\dev-connect.Server.csproj",
+              "RelativeDocumentMoniker": "dev-connect.Server\\dev-connect.Server.csproj",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\dev-connect.Server.csproj",
+              "RelativeToolTip": "dev-connect.Server\\dev-connect.Server.csproj",
+              "ViewState": "AgIAAAEAAAAAZmZmZmYkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-12T11:37:39.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ComponentRegistry.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\ComponentRegistry.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\ComponentRegistry.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\ComponentRegistry.cs",
+              "RelativeToolTip": "dev-connect.Server\\Utils\\ComponentRegistry.cs",
+              "ViewState": "AgIAABcAAAAAmJmZmZkpwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T11:18:50.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PaginationResponse.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Dto\\PaginationResponse.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Dto\\PaginationResponse.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Dto\\PaginationResponse.cs",
+              "RelativeToolTip": "dev-connect.Server\\Data\\Dto\\PaginationResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T10:54:45.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UtilsClass.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\UtilsClass.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\UtilsClass.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\UtilsClass.cs",
+              "RelativeToolTip": "dev-connect.Server\\Utils\\UtilsClass.cs",
+              "ViewState": "AgIAABYAAAAAy8zMzMwkwCsAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T10:50:01.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Repositories\\Repository.cs",
+              "RelativeToolTip": "dev-connect.Server\\Data\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAQAAADAZGZmZiYgwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T10:39:32.898Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
