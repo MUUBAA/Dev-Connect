@@ -119,3 +119,12 @@ C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\obj\Debu
 C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\obj\Debug\net8.0\dev-connect.Server.pdb
 C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\obj\Debug\net8.0\dev-connect.Server.genruntimeconfig.cache
 C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\obj\Debug\net8.0\ref\dev-connect.Server.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\JWT.dll
