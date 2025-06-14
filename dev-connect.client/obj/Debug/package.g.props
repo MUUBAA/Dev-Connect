@@ -13,13 +13,19 @@
     <PackageJsonDependenciesEmotionStyled Condition="$(PackageJsonDependenciesEmotionStyled) == ''">^11.14.0</PackageJsonDependenciesEmotionStyled>
     <PackageJsonDependenciesMuiMaterial Condition="$(PackageJsonDependenciesMuiMaterial) == ''">^7.1.1</PackageJsonDependenciesMuiMaterial>
     <PackageJsonDependenciesReduxjsToolkit Condition="$(PackageJsonDependenciesReduxjsToolkit) == ''">^2.8.2</PackageJsonDependenciesReduxjsToolkit>
+    <PackageJsonDependenciesVitejsPluginBasicSsl Condition="$(PackageJsonDependenciesVitejsPluginBasicSsl) == ''">^2.0.0</PackageJsonDependenciesVitejsPluginBasicSsl>
+    <PackageJsonDependenciesAxios Condition="$(PackageJsonDependenciesAxios) == ''">^1.9.0</PackageJsonDependenciesAxios>
+    <PackageJsonDependenciesCryptoJs Condition="$(PackageJsonDependenciesCryptoJs) == ''">^4.2.0</PackageJsonDependenciesCryptoJs>
     <PackageJsonDependenciesMotion Condition="$(PackageJsonDependenciesMotion) == ''">^12.17.0</PackageJsonDependenciesMotion>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^19.1.0</PackageJsonDependenciesReact>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^19.1.0</PackageJsonDependenciesReactDom>
     <PackageJsonDependenciesReactRedux Condition="$(PackageJsonDependenciesReactRedux) == ''">^9.2.0</PackageJsonDependenciesReactRedux>
     <PackageJsonDependenciesReactRouter Condition="$(PackageJsonDependenciesReactRouter) == ''">^7.6.2</PackageJsonDependenciesReactRouter>
     <PackageJsonDependenciesReactRouterDom Condition="$(PackageJsonDependenciesReactRouterDom) == ''">^7.6.2</PackageJsonDependenciesReactRouterDom>
+    <PackageJsonDependenciesReactToastify Condition="$(PackageJsonDependenciesReactToastify) == ''">^11.0.5</PackageJsonDependenciesReactToastify>
+    <PackageJsonDependenciesReduxPersist Condition="$(PackageJsonDependenciesReduxPersist) == ''">^6.0.0</PackageJsonDependenciesReduxPersist>
     <PackageJsonDevdependenciesEslintJs Condition="$(PackageJsonDevdependenciesEslintJs) == ''">^9.25.0</PackageJsonDevdependenciesEslintJs>
+    <PackageJsonDevdependenciesTypesCryptoJs Condition="$(PackageJsonDevdependenciesTypesCryptoJs) == ''">^4.2.2</PackageJsonDevdependenciesTypesCryptoJs>
     <PackageJsonDevdependenciesTypesNode Condition="$(PackageJsonDevdependenciesTypesNode) == ''">^22</PackageJsonDevdependenciesTypesNode>
     <PackageJsonDevdependenciesTypesReact Condition="$(PackageJsonDevdependenciesTypesReact) == ''">^19.1.2</PackageJsonDevdependenciesTypesReact>
     <PackageJsonDevdependenciesTypesReactDom Condition="$(PackageJsonDevdependenciesTypesReactDom) == ''">^19.1.2</PackageJsonDevdependenciesTypesReactDom>
