@@ -2,6 +2,11 @@ import { Box, Button, TextField, Typography } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import "./login.css"; // Import the CSS file for flip-card styles
 import backgroundImage from "../../assets/images/background-img.jpg"
+import { useDispatch } from "react-redux";
+import type { AppDispatch } from "../../redux/stores";
+import { loginUser } from "../../redux/thunk/jwtVerify";
+import { ToastContainer, toast } from "react-toastify";
+import { useNavigate } from "react-router";
 
 type GhostCursorOptions = {
   element?: HTMLElement;
@@ -142,10 +147,33 @@ function ghostCursor(options?: GhostCursorOptions) {
 const Loginpage: React.FC = () => {
   const [isSignIn, setIsSIgnIn] = useState(true);
   const [activeBtn, setActiveBtn] = useState<"signin" | "signup">("signin");
+  const dispatch = useDispatch<AppDispatch>();
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     ghostCursor();
   }, []);
+
+  const onLoginSubmit = async () => {
+    try {
+      const response = await dispatch(loginUser({userName: userName, password}));
+      if(response.type === "loginUser/fulfilled") {
+        toast.dismiss();
+        toast.success("Login Sucessfully");
+        setUserName("");
+        setPassword("");
+        navigate("/home")
+      }
+      else {
+        const errorMessage = response.payload as string;
+        toast.error(errorMessage);
+      }
+    } catch {
+      toast.error("login failed")
+    }
+  }
 
   return (
     <>
@@ -174,6 +202,7 @@ const Loginpage: React.FC = () => {
           },
         }}
       >
+        <ToastContainer />
         <div className="box">
           <div
             className="flip-card-inner"
@@ -256,6 +285,8 @@ const Loginpage: React.FC = () => {
                   variant="outlined"
                   fullWidth
                   margin="normal"
+                  value={userName}
+                  onChange={(e) => setUserName(e.target.value)}
                   sx={{
                     background: "#fff",
                     borderRadius: 3,
@@ -274,6 +305,8 @@ const Loginpage: React.FC = () => {
                   type="password"
                   fullWidth
                   margin="normal"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                   sx={{
                     background: "#fff",
                     borderRadius: 3,
@@ -302,6 +335,7 @@ const Loginpage: React.FC = () => {
                       bgcolor: "#6A9AB0",
                     },
                   }}
+                   onClick={onLoginSubmit}
                 >
                   Submit
                 </Button>
@@ -465,6 +499,7 @@ const Loginpage: React.FC = () => {
                       bgcolor: "#1976d2",
                     },
                   }}
+                 
                 >
                   Submit
                 </Button>
