@@ -128,3 +128,7 @@ C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debu
 C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\JWT.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\Moq.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\nunit.framework.dll
+C:\Users\ADMIN\Documents\Learning\dotnet\dev-connect\dev-connect.Server\bin\Debug\net8.0\nunit.framework.legacy.dll
