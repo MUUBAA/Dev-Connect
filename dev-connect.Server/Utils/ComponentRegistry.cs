@@ -9,6 +9,7 @@ using dev_connect.Server.Data.Filters;
 using Microsoft.AspNetCore.Authentication;
 using dev_connect.Server.Services.AuthService;
 using dev_connect.Server.Services.UserService;
+using dev_connect.Server.Services.MessageService;
 
 public class ComponentRegistry
     {
@@ -37,6 +38,10 @@ public class ComponentRegistry
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IUserRepository, UserRepository>();
 
+
+        services.AddScoped<IEmailService, EmailService>();
+
+        services.AddScoped<IEmailTemplate, EmailTemplate>();
         }
     }
 
