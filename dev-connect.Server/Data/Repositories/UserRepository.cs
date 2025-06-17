@@ -10,6 +10,7 @@ namespace dev_connect.Server.Data.Repositories
         UserDto? GetUserByUserName(string userName);
         UserDto? GetUserByEmail(string email);
         User? GetUserById(int id);
+        User? GetUserByInvitationToken(string token);
         void UpdateUser(User user);
     }
     public class UserRepository(Repository repository) : IUserRepository
@@ -32,6 +33,8 @@ namespace dev_connect.Server.Data.Repositories
                     existingUser.IsDeleted = false;
                     existingUser.UpdatedAt = DateTime.UtcNow;
                     existingUser.UpdatedBy = user.UpdatedBy;
+                    existingUser.InvitationToken = Guid.NewGuid().ToString();
+                    existingUser.InvitationSendAt = DateTime.UtcNow;
                     repository.SaveChanges();
                     return existingUser.Id;
 
@@ -86,12 +89,18 @@ namespace dev_connect.Server.Data.Repositories
         {
             return repository.Users.FirstOrDefault(u => u.Id == id);
         }
+        public User? GetUserByInvitationToken(string token)
+        {
+            return repository.Users.FirstOrDefault(u => u.InvitationToken == token);
+        }
         public void UpdateUser(User user)
         {
-            var existingUser = repository.Users.FirstOrDefault(u => u.Id == user.Id) ?? throw new NotFoundException("User not found");
+            var existingUser = repository.Users.FirstOrDefault(u => u.Id != user.Id) ?? throw new NotFoundException("User not found");
             existingUser.Name = user.Name;
             existingUser.Email = user.Email;
             existingUser.EmailVerefiedAt = user.EmailVerefiedAt;
+            existingUser.InvitationToken = user.InvitationToken;
+            existingUser.InvitationTokenExpiry = user.InvitationTokenExpiry;
             existingUser.UpdatedAt = DateTime.UtcNow;
             existingUser.UpdatedBy = user.UpdatedBy;
             repository.SaveChanges();

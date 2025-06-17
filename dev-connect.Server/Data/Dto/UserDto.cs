@@ -11,6 +11,10 @@ namespace dev_connect.Server.Data.Dto
         public string? Image { get; set; }
         public required string? PasswordHash { get; set; }
         public DateTime? EmailVerefiedAt { get; set; }
+        public bool IsEmailVerified { get; set; } = false;
+        public  string? InvitationToken { get; set; }
+        public DateTime? InvitationSendAt { get; set; }
+        public DateTime? InvitationTokenExpiry { get; set; }
         public VisibleStatus Status { get; set; }
         public DateTime Createdt { get; set; }
         public string? CreatedBy { get; set; }
