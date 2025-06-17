@@ -31,6 +31,7 @@ namespace dev_connect.Server.Controllers.UserController
             var response = _userService.UpdateUser(contract);
             return Ok(new GenericApiResponse<string>(true, response ? "User updated sucessfully" : "Failed to update user"));
         }
+
         [HttpGet]
         [Route("/user/getById")]
         public ActionResult GetUser([FromQuery] int id)

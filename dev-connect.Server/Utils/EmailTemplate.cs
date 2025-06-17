@@ -15,9 +15,10 @@ namespace dev_connect.Server.Utils
         public (string subject, string body) SendInvitationEmail(User user)
         {
             var subject = "Invitation to join DEV-CONNECT";
+            var inviteLink = $"{_appUrl}/verify-email?token={user.InvitationToken}";
             var mailBody = $"Dear {user.Name}, <br><br>" +
                            $"You have been invited to join DEV-CONNECT <br><br>" +
-                           $"Please click on the following link to login: <a href={_appUrl}>Login</a>" +
+                           $"Please click on the following link to login: <a href={inviteLink}>Verify Email</a>" +
                            $"Thank you, <br>" +
                            $"DEV-CONNECT Team";
             return (subject, mailBody);
