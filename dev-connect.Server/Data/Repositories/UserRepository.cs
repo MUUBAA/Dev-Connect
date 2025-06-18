@@ -20,7 +20,7 @@ namespace dev_connect.Server.Data.Repositories
             var existingUser = repository.Users.FirstOrDefault(u => u.Email == user.Email);
             if(existingUser != null)
             {
-                if(!existingUser.IsDeleted)
+                if(!existingUser.IsDeleted && existingUser.IsEmailVerified == true)
                 {
                     throw new EntityDuplicateException("user in this email already exisist");
                 }
@@ -95,7 +95,7 @@ namespace dev_connect.Server.Data.Repositories
         }
         public void UpdateUser(User user)
         {
-            var existingUser = repository.Users.FirstOrDefault(u => u.Id != user.Id) ?? throw new NotFoundException("User not found");
+            var existingUser = repository.Users.FirstOrDefault(u => u.Email == user.Email) ?? throw new NotFoundException("User not found");
             existingUser.Name = user.Name;
             existingUser.Email = user.Email;
             existingUser.EmailVerefiedAt = user.EmailVerefiedAt;

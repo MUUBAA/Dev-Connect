@@ -34,9 +34,9 @@ namespace dev_connect.Server.Services.AuthService
         private readonly IConfiguration _configuration = configuration;
 
         private readonly string _appUrl = configuration.GetValue<string>("AppUrl") ?? string.Empty;
-        public string Login(string userName, string password)
+        public string Login(string username, string password)
         {
-            var user = _userService.GetUserByUserName(userName) ?? throw new Exception("User not found");
+            var user = _userService.GetUserByUserName(username) ?? throw new Exception("User not found");
 
             var passwordHasher = new PasswordHasher<User>();
 
@@ -45,6 +45,10 @@ namespace dev_connect.Server.Services.AuthService
             if (passwordVerificationResult == PasswordVerificationResult.Failed)
             {
                 throw new Exception("Invalid password");
+            }
+            if (user.IsEmailVerified == false)
+            {
+                throw new NotFoundException("User not found");
             }
 
             var generatedToken = GenerateToken(new JWTUserParam
@@ -64,7 +68,7 @@ namespace dev_connect.Server.Services.AuthService
                 throw new EntityDuplicateException("User already exists with this email");
             }
             var contract = new UserContract
-            {
+            {   
                 UserName = userDto.UserName,
                 Email = userDto.Email,
                 Password = new PasswordHasher<UserContract>().HashPassword(null, userDto.Password)

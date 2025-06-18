@@ -36,7 +36,7 @@
 
 .box-login {
   z-index: 2;
-  background: transparent;
+  background: #B1F0F7;
   border-radius: 25px;
   box-sizing: border-box;
   backdrop-filter: blur(10px);
@@ -45,7 +45,7 @@
 .box-signup {
   transform: rotateY(180deg);
   z-index: 1;
-  background: transparent;
+  background: #B1F0F7;
   border-radius: 25px;
   box-sizing: border-box;
   backdrop-filter: blur(10px);

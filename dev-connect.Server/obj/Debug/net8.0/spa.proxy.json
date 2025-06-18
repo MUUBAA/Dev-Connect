@@ -1,6 +1,6 @@
 {
 "SpaProxyServer": {
-"ServerUrl": "https://localhost:52523",
+"ServerUrl": "https://localhost:5015",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
 "WorkingDirectory": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\..\\dev-connect.client",
