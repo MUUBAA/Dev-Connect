@@ -1,4 +1,5 @@
-﻿using dev_connect.Server.Data.Dto;
+﻿using dev_connect.Server.Data.Contract.Users;
+using dev_connect.Server.Data.Dto;
 using dev_connect.Server.Services.AuthService;
 using dev_connect.Server.Services.UserService;
 using dev_connect.Server.Utils;
@@ -25,13 +26,13 @@ namespace dev_connect.Server.Controllers.AuthController
         
         [HttpPost]
         [Route("/auth/register")]
-        public IActionResult Register([FromBody] RegisterUserDto userDto)
+        public ActionResult<GenericApiResponse<string>> CreateUser([FromBody] UserContract request)
         {
-            _authservice.Register(userDto);
-            return Ok();
+            var response = _userService.CreateUser(request);
+            return Ok(new GenericApiResponse<string>(true, response ? "User Create Successfully" : "Failed to Create User"));
+
         }
-
-
+        
         [HttpGet]
         [Route("/auth/verify-email")]
         public IActionResult VerifyEmail([FromQuery] string token)
