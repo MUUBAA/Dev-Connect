@@ -15,21 +15,22 @@ namespace dev_connect.Server.Utils
         public (string subject, string body) SendInvitationEmail(User user)
         {
             var subject = "Invitation to join DEV-CONNECT";
+            var inviteLink = $"{_appUrl}/verify-email?token={user.InvitationToken}";
             var mailBody = $"Dear {user.Name}, <br><br>" +
                            $"You have been invited to join DEV-CONNECT <br><br>" +
-                           $"Please click on the following link to login: <a href={_appUrl}>Login</a>" +
+                           $"Please click on the following link to login: <a href={inviteLink}>Verify Email</a>" +
                            $"Thank you, <br>" +
                            $"DEV-CONNECT Team";
             return (subject, mailBody);
         }
 
-        public (string subject, string body) SendForgotPasswordEmail(UserDto user, string passwordHash)
+        public (string subject, string body) SendForgotPasswordEmail(UserDto user, string resetToken)
         {
             var subject = "Forgot Password";
             var mailBody = $"Dear {user.Name},<br><br>" +
                            $"You have requested to reset your password. Please use the following credentials to login:<br><br>" +
                            $"User Name: {user.Name}<br>" +
-                           $"Please click on the following link to login: <a href='{_appUrl}/resetPassword/{user.Id}>Login</a>" +
+                           $"Please click on the following link to login: <a href='{_appUrl}/resetPassword/{resetToken}>Login</a>" +
                            $"Thank you, <br>" +
                            $"DEV-CONNECT Team";
             return (subject, mailBody);

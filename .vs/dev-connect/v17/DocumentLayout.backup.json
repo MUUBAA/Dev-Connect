@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\tests\\emailservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\tests\\emailservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\services\\messageservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\services\\messageservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\utils\\componentregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\utils\\componentregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\controllers\\usercontroller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\controllers\\usercontroller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\utils\\authprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\utils\\componentregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\utils\\componentregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\utils\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\utils\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\data\\contract\\users\\userupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\data\\contract\\users\\userupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\services\\messageservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|solutionrelative:dev-connect.server\\services\\messageservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6B578F8-8580-4DAB-8C3D-A886AB602699}|dev-connect.Server\\dev-connect.Server.csproj|c:\\users\\admin\\documents\\learning\\dotnet\\dev-connect\\dev-connect.server\\data\\contract\\users\\usercontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,16 +90,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "EmailServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Tests\\EmailServiceTest.cs",
+              "RelativeDocumentMoniker": "dev-connect.Server\\Tests\\EmailServiceTest.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Tests\\EmailServiceTest.cs*",
+              "RelativeToolTip": "dev-connect.Server\\Tests\\EmailServiceTest.cs*",
+              "ViewState": "AgIAAAEAAABQYWZmZmYkwAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T12:56:32.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Controllers\\AuthController\\AuthController.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Controllers\\AuthController\\AuthController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Controllers\\AuthController\\AuthController.cs*",
-              "RelativeToolTip": "dev-connect.Server\\Controllers\\AuthController\\AuthController.cs*",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Controllers\\AuthController\\AuthController.cs",
+              "RelativeToolTip": "dev-connect.Server\\Controllers\\AuthController\\AuthController.cs",
               "ViewState": "AgIAAAgAAABQZGZmZmY0wB8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T12:23:35.505Z",
@@ -103,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "AuthProvider.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\AuthProvider.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\AuthProvider.cs",
@@ -116,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "UserContext.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\UserContext.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\UserContext.cs",
@@ -129,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "DataExceptions.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Exceptions\\DataExceptions.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Exceptions\\DataExceptions.cs",
@@ -142,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "RegisterUserDto.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Dto\\RegisterUserDto.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Dto\\RegisterUserDto.cs",
@@ -155,12 +172,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\AuthService\\AuthService.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Services\\AuthService\\AuthService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\AuthService\\AuthService.cs*",
-              "RelativeToolTip": "dev-connect.Server\\Services\\AuthService\\AuthService.cs*",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\AuthService\\AuthService.cs",
+              "RelativeToolTip": "dev-connect.Server\\Services\\AuthService\\AuthService.cs",
               "ViewState": "AgIAAFoAAAAA2P/////xv3kAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T09:51:58.922Z",
@@ -168,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UserUpdate.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Contract\\Users\\UserUpdate.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Contract\\Users\\UserUpdate.cs",
@@ -181,20 +198,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "ComponentRegistry.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\ComponentRegistry.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\ComponentRegistry.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\ComponentRegistry.cs",
               "RelativeToolTip": "dev-connect.Server\\Utils\\ComponentRegistry.cs",
-              "ViewState": "AgIAABwAAABA/////38YwCsAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAgxszMzMwvwCkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T08:08:09.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "EmailTemplate.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\EmailTemplate.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\EmailTemplate.cs",
@@ -207,20 +224,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\MessageService\\EmailService.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Services\\MessageService\\EmailService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\MessageService\\EmailService.cs",
-              "RelativeToolTip": "dev-connect.Server\\Services\\MessageService\\EmailService.cs",
-              "ViewState": "AgIAACsAAAAAk5mZmZkBwDwAAABJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\MessageService\\EmailService.cs*",
+              "RelativeToolTip": "dev-connect.Server\\Services\\MessageService\\EmailService.cs*",
+              "ViewState": "AgIAAAkAAABgl5mZmZkpwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T05:53:55.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Program.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Program.cs",
@@ -228,16 +245,17 @@
               "RelativeToolTip": "dev-connect.Server\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T06:23:54.173Z"
+              "WhenOpened": "2025-06-15T06:23:54.173Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Controllers\\UserController\\UserController.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Controllers\\UserController\\UserController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Controllers\\UserController\\UserController.cs*",
-              "RelativeToolTip": "dev-connect.Server\\Controllers\\UserController\\UserController.cs*",
+              "ToolTip": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Controllers\\UserController\\UserController.cs",
+              "RelativeToolTip": "dev-connect.Server\\Controllers\\UserController\\UserController.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAswDUAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-14T11:10:11.976Z",
@@ -245,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UserContract.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Contract\\Users\\UserContract.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Contract\\Users\\UserContract.cs",
@@ -258,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Dto\\UserDto.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Dto\\UserDto.cs",
@@ -266,11 +284,12 @@
               "RelativeToolTip": "dev-connect.Server\\Data\\Dto\\UserDto.cs",
               "ViewState": "AgIAAAIAAAC8MjMzMzMrwAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T10:29:35.53Z"
+              "WhenOpened": "2025-06-14T10:29:35.53Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Repositories\\UserRepository.cs",
@@ -283,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Services\\UserService\\UserService.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Services\\UserService\\UserService.cs",
@@ -296,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "PaginationResponse.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Dto\\PaginationResponse.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Dto\\PaginationResponse.cs",
@@ -304,11 +323,12 @@
               "RelativeToolTip": "dev-connect.Server\\Data\\Dto\\PaginationResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T10:54:45.684Z"
+              "WhenOpened": "2025-06-12T10:54:45.684Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "UtilsClass.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Utils\\UtilsClass.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Utils\\UtilsClass.cs",
@@ -316,11 +336,12 @@
               "RelativeToolTip": "dev-connect.Server\\Utils\\UtilsClass.cs",
               "ViewState": "AgIAABYAAAAAy8zMzMwkwCsAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T10:50:01.23Z"
+              "WhenOpened": "2025-06-12T10:50:01.23Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\Learning\\dotnet\\dev-connect\\dev-connect.Server\\Data\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "dev-connect.Server\\Data\\Repositories\\Repository.cs",
@@ -328,7 +349,8 @@
               "RelativeToolTip": "dev-connect.Server\\Data\\Repositories\\Repository.cs",
               "ViewState": "AgIAAAQAAADAZGZmZiYgwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T10:39:32.898Z"
+              "WhenOpened": "2025-06-12T10:39:32.898Z",
+              "EditorCaption": ""
             }
           ]
         }

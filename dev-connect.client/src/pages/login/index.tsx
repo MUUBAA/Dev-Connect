@@ -1,16 +1,25 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import "./login.css"; // Import the CSS file for flip-card styles
-import backgroundImage from "../../assets/images/background-img.jpg"
 import { useDispatch } from "react-redux";
-import type { AppDispatch } from "../../redux/stores";
-import { loginUser } from "../../redux/thunk/jwtVerify";
+import type { AppDispatch, } from "../../redux/stores";
+import { loginUser, registerUser } from "../../redux/thunk/jwtVerify";
 import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router";
+import {  UserGetByUserName } from "../../redux/thunk/user";
+import { setJwtPayload, type DecodedToken } from "../../redux/slices/loginUser";
+import { jwtDecode } from "jwt-decode";
+import { setUserProfile } from "../../redux/slices/users";
 
 type GhostCursorOptions = {
   element?: HTMLElement;
 };
+
+interface UserCreateParams {
+  username: string;
+  email: string;
+  password: string;
+}
 
 class Particle {
   initialLifeSpan: number;
@@ -31,17 +40,15 @@ class Particle {
     const opacity = Math.max(this.lifeSpan / this.initialLifeSpan, 0);
 
     context.globalAlpha = opacity;
-    context.drawImage(
-      this.image,
-      this.position.x,
-      this.position.y
-    );
+    context.drawImage(this.image, this.position.x, this.position.y);
   }
 }
 
 function ghostCursor(options?: GhostCursorOptions) {
   const hasWrapperEl = options && options.element;
-  const element: HTMLElement = (hasWrapperEl ? options!.element! : document.body) as HTMLElement;
+  const element: HTMLElement = (
+    hasWrapperEl ? options!.element! : document.body
+  ) as HTMLElement;
 
   let width = window.innerWidth;
   let height = window.innerHeight;
@@ -150,6 +157,11 @@ const Loginpage: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [user, setUser] = useState<Partial<UserCreateParams>>({
+    username: "",
+    email: "",
+    password: ""
+  })
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -158,22 +170,45 @@ const Loginpage: React.FC = () => {
 
   const onLoginSubmit = async () => {
     try {
-      const response = await dispatch(loginUser({userName: userName, password}));
-      if(response.type === "loginUser/fulfilled") {
+      const response = await dispatch(
+        loginUser({ userName: userName, password })
+      );
+      if (response.type === "loginUser/fulfilled") {
         toast.dismiss();
         toast.success("Login Sucessfully");
         setUserName("");
         setPassword("");
-        navigate("/home")
-      }
-      else {
+
+
+        const jwt = response.payload as string;
+        const decodedToken = jwtDecode<DecodedToken>(jwt);
+
+        await dispatch(
+          UserGetByUserName({username: decodedToken.UserData.UserName})
+        );
+        dispatch(setUserProfile(decodedToken.UserData));
+        dispatch(setJwtPayload(decodedToken));
+        navigate("/home");
+      } else {
         const errorMessage = response.payload as string;
         toast.error(errorMessage);
       }
     } catch {
-      toast.error("login failed")
+      toast.error("login failed");
     }
+  };
+  const onRegisterSubmit = async () => {
+      try {
+        await dispatch(registerUser(user as UserCreateParams)).unwrap();
+        toast.success("Registration sucessfull verify the email")
+         navigate("/")
+      }
+      catch (error) {
+        console.error("create failed", error)
+        toast.error("create failed");
+      } 
   }
+
 
   return (
     <>
@@ -183,22 +218,22 @@ const Loginpage: React.FC = () => {
           height: "100vh",
           fontFamily: "Comfortaa, Comfortaa",
           color: "#ffffff",
-          background: `linear-gradient(-45deg, #ee7752cc, #e73c7ecc, #23a6d5cc, #23d5abcc), url(${backgroundImage}) center/cover no-repeat`,
+          background: `linear-gradient(-45deg, #23d5abcc, #81BFDA, #81BFDA, #23d5abcc)`,
           backgroundBlendMode: "overlay",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           animation: "gradientBG 15s ease infinite",
           "@keyframes gradientBG": {
-        "0%": {
-          backgroundPosition: "0% 50%",
-        },
-        "50%": {
-          backgroundPosition: "100% 50%",
-        },
-        "100%": {
-          backgroundPosition: "0% 50%",
-        },
+            "0%": {
+              backgroundPosition: "0% 50%",
+            },
+            "50%": {
+              backgroundPosition: "100% 50%",
+            },
+            "100%": {
+              backgroundPosition: "0% 50%",
+            },
           },
         }}
       >
@@ -297,6 +332,9 @@ const Loginpage: React.FC = () => {
                       borderRadius: 3,
                     },
                     input: { color: "#222" },
+                    "& label.Mui-focused": {
+                      color: "blue", // label color when focused
+                    },
                   }}
                 />
                 <TextField
@@ -315,6 +353,9 @@ const Loginpage: React.FC = () => {
                       borderRadius: 3,
                     },
                     input: { color: "#222" },
+                    "& label.Mui-focused": {
+                      color: "blue", // label color when focused
+                    },
                   }}
                 />
                 <Button
@@ -332,10 +373,10 @@ const Loginpage: React.FC = () => {
                     "&:hover": {
                       transform: "scale(1.03)",
                       boxShadow: "0 8px 32px 0 rgba(33, 203, 243, 0.25)",
-                      bgcolor: "#6A9AB0",
+                      bgcolor: "#1976d2",
                     },
                   }}
-                   onClick={onLoginSubmit}
+                  onClick={onLoginSubmit}
                 >
                   Submit
                 </Button>
@@ -351,11 +392,11 @@ const Loginpage: React.FC = () => {
                   <Typography
                     sx={{
                       textAlign: "right",
-                      color: "#ffd600",
+                      color: "#FB8B24",
                       fontSize: 14,
                       cursor: "pointer",
                       textDecoration: "underline",
-                      "&:hover": { color: "#fff" },
+                      "&:hover": { color: "red" },
                     }}
                   >
                     Forgot password?
@@ -364,7 +405,10 @@ const Loginpage: React.FC = () => {
               </Box>
             </div>
             {/* Sign Up Side */}
-            <div className="box-signup" style={{ transform: "rotateY(180deg)" }}>
+            <div
+              className="box-signup"
+              style={{ transform: "rotateY(180deg)" }}
+            >
               <Box
                 sx={{
                   width: "100%",
@@ -438,6 +482,8 @@ const Loginpage: React.FC = () => {
                   variant="outlined"
                   fullWidth
                   margin="normal"
+                  value={user.username}
+                  onChange={(e) => setUser({ ...user, username: e.target.value })}
                   sx={{
                     background: "#fff",
                     borderRadius: 3,
@@ -447,6 +493,9 @@ const Loginpage: React.FC = () => {
                       borderRadius: 3,
                     },
                     input: { color: "#222" },
+                    "& label.Mui-focused": {
+                      color: "blue", // label color when focused
+                    },
                   }}
                 />
                 <TextField
@@ -455,6 +504,8 @@ const Loginpage: React.FC = () => {
                   type="email"
                   fullWidth
                   margin="normal"
+                  value={user.email}
+                  onChange={(e) => setUser({ ...user, email: e.target.value })}
                   sx={{
                     background: "#fff",
                     borderRadius: 3,
@@ -471,6 +522,8 @@ const Loginpage: React.FC = () => {
                   type="password"
                   fullWidth
                   margin="normal"
+                  value={user.password}
+                  onChange={(e) => setUser({ ...user, password: e.target.value })}
                   sx={{
                     background: "#fff",
                     borderRadius: 3,
@@ -479,6 +532,9 @@ const Loginpage: React.FC = () => {
                       borderRadius: 3,
                     },
                     input: { color: "#222" },
+                    "& label.Mui-focused": {
+                      color: "blue", // label color when focused
+                    },
                   }}
                 />
                 <Button
@@ -499,7 +555,7 @@ const Loginpage: React.FC = () => {
                       bgcolor: "#1976d2",
                     },
                   }}
-                 
+                  onClick={onRegisterSubmit}
                 >
                   Submit
                 </Button>

@@ -9,7 +9,7 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <SpaRoot>..\dev-connect.client</SpaRoot>
     <SpaProxyLaunchCommand>npm run dev</SpaProxyLaunchCommand>
-    <SpaProxyServerUrl>https://localhost:52523</SpaProxyServerUrl>
+    <SpaProxyServerUrl>https://localhost:5015</SpaProxyServerUrl>
   </PropertyGroup>
 
   <ItemGroup>

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using dev_connect.Server.Data.Repositories;
 
@@ -11,9 +12,11 @@ using dev_connect.Server.Data.Repositories;
 namespace dev_connect.Server.Migrations
 {
     [DbContext(typeof(Repository))]
-    partial class RepositoryModelSnapshot : ModelSnapshot
+    [Migration("20250617111729_AddEmailVerificationColumns")]
+    partial class AddEmailVerificationColumns
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -123,10 +126,6 @@ namespace dev_connect.Server.Migrations
                         .HasColumnType("longtext")
                         .HasColumnName("invitation_token");
 
-                    b.Property<DateTime?>("InvitationTokenExpiry")
-                        .HasColumnType("datetime(6)")
-                        .HasColumnName("invitation_token_expiry");
-
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("tinyint(1)")
                         .HasColumnName("is_deleted");
@@ -173,14 +172,14 @@ namespace dev_connect.Server.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 6, 17, 13, 1, 33, 544, DateTimeKind.Utc).AddTicks(4525),
+                            CreatedAt = new DateTime(2025, 6, 17, 11, 17, 28, 523, DateTimeKind.Utc).AddTicks(7515),
                             CreatedBy = "System",
                             Email = "abduzayn709@gmail.com",
                             IsDeleted = false,
                             IsEmailVerified = false,
                             IsVerificationSent = false,
                             Name = "Abdullah Mubasir",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHX+7uKynY/U/xiuPxPfWPbicqbc9pb77vrlX8Un8hAARWIsGYpNBjORPl2K8Nkc8g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKd4myfPtMeNRw506C3zX159cIxzXl+LCdaMlfRJjRYYch47nkV+YcHlTZYBBHjUSQ==",
                             Status = "Active",
                             UserName = "Muba"
                         });

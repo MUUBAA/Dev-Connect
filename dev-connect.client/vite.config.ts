@@ -19,7 +19,14 @@ export default defineConfig({
                 changeOrigin: true,
             },
             "^/auth/.*": {
-                target: "http://localhost:5069/"
+                target: "http://localhost:5069/",
+                secure: false,
+                changeOrigin: true,
+            },
+            "^/user/.*": {
+                target: "http://localhost:5069/",
+                secure: false,
+                changeOrigin: true
             }
         },
         port: 5015
