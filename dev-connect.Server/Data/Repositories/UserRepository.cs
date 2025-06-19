@@ -20,7 +20,7 @@ namespace dev_connect.Server.Data.Repositories
             var existingUser = repository.Users.FirstOrDefault(u => u.Email == user.Email);
             if(existingUser != null)
             {
-                if(!existingUser.IsDeleted && existingUser.IsEmailVerified == true)
+                if(!existingUser.IsDeleted)
                 {
                     throw new EntityDuplicateException("user in this email already exisist");
                 }
