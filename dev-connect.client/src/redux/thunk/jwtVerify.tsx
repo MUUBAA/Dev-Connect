@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from 'axios';
+import axios from "axios";
 
 
 export interface UserCreateParams {
@@ -8,7 +8,7 @@ export interface UserCreateParams {
     password: string;
 };
 
-export const loginUser = createAsyncThunk<any, { userName: string; password: string }>('loginUser', async ({ userName, password }, { rejectWithValue }) => {
+export const loginUser = createAsyncThunk<string, { userName: string; password: string }>('loginUser', async ({ userName, password }, { rejectWithValue }) => {
   try {
     const response = await axios.post(`/auth/login?userName=${userName}&password=${password}`, {
       headers: {
@@ -23,7 +23,7 @@ export const loginUser = createAsyncThunk<any, { userName: string; password: str
   }
 }
 );
-export const registerUser = createAsyncThunk<any, UserCreateParams>(
+export const registerUser = createAsyncThunk<string, UserCreateParams>(
   'registerUser',
   async (userData, { rejectWithValue }) => {
     try {
@@ -48,7 +48,7 @@ export interface EmailVerificationToken {
   token: string;
 }
 
-export const EmailVerification  = createAsyncThunk<any,  EmailVerificationToken>(
+export const EmailVerification  = createAsyncThunk<string,  EmailVerificationToken>(
   "/auth/verifyEmail",
   async (userData, {rejectWithValue}) => {
     try {
@@ -68,3 +68,27 @@ export const EmailVerification  = createAsyncThunk<any,  EmailVerificationToken>
     }
   }
 )
+
+export interface ForgotPasswordMail {
+  email : string
+}
+
+export const ForgotPassword = createAsyncThunk<any, ForgotPasswordMail>(
+  '/auth/forgotPassword',
+  async (userData, { rejectWithValue }) => {
+    try {
+      const response = await axios.post(
+        `/auth/forgot-password?email=${encodeURIComponent(userData.email)}`,
+        {},
+        {
+          headers: {
+            'accept': '*/*',
+          }
+        }
+      );
+      return response.data;
+    } catch (error: any) {
+      return rejectWithValue(error.response?.data?.message);
+    }
+  }
+);
