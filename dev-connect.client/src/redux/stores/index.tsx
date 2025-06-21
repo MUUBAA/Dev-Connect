@@ -4,11 +4,13 @@ import persistStore from "redux-persist/es/persistStore";
 import { encrypt } from "../../utils/encryptionUtils";
 import loginUserSlice from "../slices/loginUser";
 import userSlice from "../slices/users";
+import registrationSlice from "../slices/RegisterUser"
 
 
 const rootReducer = combineReducers({
     loginUser: persistSlice(loginUserSlice, {sliceKey: "loginUser"}),
-    users: persistSlice(userSlice, {sliceKey: "user"})
+    users: persistSlice(userSlice, {sliceKey: "user"}),
+    registerUser: persistSlice(registrationSlice, {sliceKey: "registration"})
 })
 
 

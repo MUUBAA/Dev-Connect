@@ -1,11 +1,10 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { getDecryptJwt } from "../../utils/auth";
 import axios from "axios";
-import { error } from "console";
 
 
 export interface UserCreateParams {
-    name: string;
+    username: string;
     email: string;
     password: string;
 }
