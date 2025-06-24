@@ -99,6 +99,7 @@ namespace dev_connect.Server.Services.UserService
                 Id = contract.Id,
                 Name = contract.Name,
                 Email = contract.Email,
+                PasswordHash = contract.PasswordHash,
                 UpdatedAt = DateTime.UtcNow,
                 UpdatedBy = _userContext.UserId,
                 UserName = contract.UserName

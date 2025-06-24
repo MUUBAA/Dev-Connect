@@ -47,10 +47,10 @@ namespace dev_connect.Server.Services.AuthService
             {
                 throw new Exception("Invalid password");
             }
-            if (user.IsEmailVerified == false)
-            {
-                throw new NotFoundException("User not found");
-            }
+            // if (user.IsEmailVerified == false)
+            // {
+            //     throw new NotFoundException("User not found");
+            // }
 
             var generatedToken = GenerateToken(new JWTUserParam
             {
@@ -148,13 +148,13 @@ namespace dev_connect.Server.Services.AuthService
                 }, out SecurityToken validatedToken);
 
                 var purposeClaim = principal.FindFirst("purpose")?.Value;
-                if(purposeClaim != "password_reset")
+                if (purposeClaim != "password_reset")
                 {
                     throw new SecurityTokenException("Invalid token purpose");
                 }
 
                 var userIdClaim = principal.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                if(string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out var userId))
+                if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out var userId))
                 {
                     throw new Exception("Invalid token data");
                 }
@@ -170,8 +170,9 @@ namespace dev_connect.Server.Services.AuthService
                 };
 
                 return _userService.UpdateUser(updateContract);
+            
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new SecurityTokenException("Invalid or expired token", ex);
             }

@@ -98,6 +98,7 @@ namespace dev_connect.Server.Data.Repositories
             var existingUser = repository.Users.FirstOrDefault(u => u.Email == user.Email) ?? throw new NotFoundException("User not found");
             existingUser.Name = user.Name;
             existingUser.Email = user.Email;
+            existingUser.PasswordHash = user.PasswordHash;
             existingUser.EmailVerefiedAt = user.EmailVerefiedAt;
             existingUser.InvitationToken = user.InvitationToken;
             existingUser.InvitationTokenExpiry = user.InvitationTokenExpiry;
