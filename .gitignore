@@ -1,1 +1,8 @@
 dev-connect.Server/obj/
+dev-connect.Server/bin/Debug/
+.vs/
+
+.vs/dev-connect/v17/.futdcache.v2
+.vs/dev-connect/FileContentIndex/f42da930-868c-403b-bd84-1a1557e8934b.vsidx
+.vs/dev-connect/v17/.suo
+.vs/dev-connect/DesignTimeBuild/.dtbcache.v2
