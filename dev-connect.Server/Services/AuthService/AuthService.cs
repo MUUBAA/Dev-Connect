@@ -20,6 +20,7 @@ namespace dev_connect.Server.Services.AuthService
         string Login(string userName, string password);
         bool Register(RegisterUserDto userDto);
         bool ForgotPassword(string email);
+        public bool ResetPassword(string token, string newPassword);
     }
     public class AuthService(IConfiguration configuration, IUserService userService, IEmailService emailService, IEmailTemplate emailTemplate) : IAuthService
     {
@@ -128,6 +129,52 @@ namespace dev_connect.Server.Services.AuthService
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
+        }
+
+        public bool ResetPassword(string token, string newPassword)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_JWTSecret);
+
+            try
+            {
+                var principal = tokenHandler.ValidateToken(token, new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ClockSkew = TimeSpan.Zero
+                }, out SecurityToken validatedToken);
+
+                var purposeClaim = principal.FindFirst("purpose")?.Value;
+                if(purposeClaim != "password_reset")
+                {
+                    throw new SecurityTokenException("Invalid token purpose");
+                }
+
+                var userIdClaim = principal.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if(string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out var userId))
+                {
+                    throw new Exception("Invalid token data");
+                }
+
+                var user = _userService.GetUserById(userId) ?? throw new Exception("User not found");
+
+                var updateContract = new UserUpdate
+                {
+                    Id = user.Id,
+                    PasswordHash = new PasswordHasher<User>().HashPassword(null, newPassword),
+                    Email = user.Email,
+                    Name = user.Name
+                };
+
+                return _userService.UpdateUser(updateContract);
+            }
+            catch(Exception ex)
+            {
+                throw new SecurityTokenException("Invalid or expired token", ex);
+            }
         }
 
     }
