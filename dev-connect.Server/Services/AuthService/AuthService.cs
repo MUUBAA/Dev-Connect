@@ -100,7 +100,7 @@ namespace dev_connect.Server.Services.AuthService
         {
             var user = _userService.GetUserByEmail(email) ?? throw new Exception("User not found");
             var resetToken = GeneratePasswordResetToken(user.Id);
-            var resetLink = $"{_appUrl}/reset-password={resetToken}";
+            var resetLink = $"{_appUrl}/reset-password?token={resetToken}";
 
             return SendForgotPasswordEmail(user, resetLink);
         }
