@@ -92,3 +92,31 @@ export const ForgotPassword = createAsyncThunk<any, ForgotPasswordMail>(
     }
   }
 );
+export interface ResetPasswordParams {
+  token: string;
+  newPassword: string;
+}
+
+export const resetPassword = createAsyncThunk<any, ResetPasswordParams>(
+  '/auth/resetPassword',
+  async (params, { rejectWithValue }) => {
+    try {
+      const response = await axios.post(
+        '/auth/reset-password',
+        {
+          token: params.token,
+          newPassword: params.newPassword,
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json-patch+json',
+            'accept': '*/*',
+          },
+        }
+      );
+      return response.data;
+    } catch (error: any) {
+      return rejectWithValue(error.response?.data?.message || 'Password reset failed');
+    }
+  }
+);
