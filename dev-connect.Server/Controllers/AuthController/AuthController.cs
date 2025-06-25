@@ -65,5 +65,19 @@ namespace dev_connect.Server.Controllers.AuthController
             _authservice.ForgotPassword(email);
             return Ok();
         }
+        [HttpPost]
+        [Route("/auth/reset-password")]
+        public IActionResult ResetPassword([FromBody] ResetPassword request)
+        {
+            try
+            {
+                var result = _authservice.ResetPassword(request.Token, request.NewPassword);
+                return Ok(new GenericApiResponse<string>(true, "Password reset successful"));
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(new GenericApiResponse<string>(false, ex.Message));
+            }
+        }
     }
 }

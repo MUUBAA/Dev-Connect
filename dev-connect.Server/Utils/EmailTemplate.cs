@@ -27,12 +27,13 @@ namespace dev_connect.Server.Utils
         public (string subject, string body) SendForgotPasswordEmail(UserDto user, string resetToken)
         {
             var subject = "Forgot Password";
+            var resetLink = $"{resetToken}";
             var mailBody = $"Dear {user.Name},<br><br>" +
-                           $"You have requested to reset your password. Please use the following credentials to login:<br><br>" +
-                           $"User Name: {user.Name}<br>" +
-                           $"Please click on the following link to login: <a href='{_appUrl}/resetPassword/{resetToken}>Login</a>" +
-                           $"Thank you, <br>" +
-                           $"DEV-CONNECT Team";
+                   $"You have requested to reset your password. Please use the following credentials to login:<br><br>" +
+                   $"User Name: {user.Name}<br>" +
+                   $"Please click on the following link to reset your password: <a href={resetLink}>Reset Password</a><br><br>" +
+                   $"Thank you, <br>" +
+                   $"DEV-CONNECT Team";
             return (subject, mailBody);
         }
     }

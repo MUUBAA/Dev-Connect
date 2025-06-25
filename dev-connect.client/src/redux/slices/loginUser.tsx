@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { loginUser } from "../thunk/jwtVerify";
+import { ForgotPassword, loginUser, resetPassword } from "../thunk/jwtVerify";
 import { encrypt } from "../../utils/encryptionUtils";
 
 
@@ -24,13 +24,15 @@ interface LoginState {
     loading : boolean;
     error: string | null;
     jwt: string | null;
+    forgotPasswordSucess: boolean | null
 }
 
 const initialState : LoginState = {
     jwtPayload: null,
     loading: false,
     error: null,
-    jwt: null
+    jwt: null,
+    forgotPasswordSucess: false
 }
 
 const loginSlice = createSlice ({
@@ -42,6 +44,10 @@ const loginSlice = createSlice ({
         },
         setJwtPayload: (state, action) => {
             state.jwtPayload = action.payload
+        },
+        resetForgotPassword: (state) => {
+            state.forgotPasswordSucess = false;
+            state.error = null;
         }
     },
     extraReducers: (builder) => {
@@ -59,7 +65,31 @@ const loginSlice = createSlice ({
             .addCase(loginUser.rejected, (state, action) => {
                 state.loading = false;
                 state.error= action.payload as string;
-            });
+            })
+            .addCase(ForgotPassword.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+                state.forgotPasswordSucess = false;
+            })
+            .addCase(ForgotPassword.fulfilled, (state) => {
+                state.loading = false;
+                state.forgotPasswordSucess = true;
+            })
+            .addCase(ForgotPassword.rejected, (state, action) => {
+                state.loading = false;
+                state.forgotPasswordSucess = false;
+                state.error = action.payload as string;
+            })
+            .addCase(resetPassword.pending, (state) => {
+                state.loading = true;
+            })
+            .addCase(resetPassword.fulfilled, (state) => {
+                state.loading = false;
+            })
+            .addCase(resetPassword.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload as string;
+            })
     },
 });
 

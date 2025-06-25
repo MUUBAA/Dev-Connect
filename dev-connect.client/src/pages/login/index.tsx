@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 import "./login.css"; // Import the CSS file for flip-card styles
 import { useDispatch } from "react-redux";
 import type { AppDispatch, } from "../../redux/stores";
-import { loginUser, registerUser } from "../../redux/thunk/jwtVerify";
+import {  loginUser, registerUser } from "../../redux/thunk/jwtVerify";
 import { ToastContainer, toast } from "react-toastify";
-import { useNavigate } from "react-router";
+import {  useNavigate } from "react-router";
 import {  UserGetByUserName } from "../../redux/thunk/user";
 import { setJwtPayload, type DecodedToken } from "../../redux/slices/loginUser";
 import { jwtDecode } from "jwt-decode";
@@ -208,8 +208,6 @@ const Loginpage: React.FC = () => {
         toast.error("create failed");
       } 
   }
-
-
   return (
     <>
       <Box
@@ -321,6 +319,7 @@ const Loginpage: React.FC = () => {
                   fullWidth
                   margin="normal"
                   value={userName}
+                  required
                   onChange={(e) => setUserName(e.target.value)}
                   sx={{
                     background: "#fff",
@@ -343,6 +342,7 @@ const Loginpage: React.FC = () => {
                   type="password"
                   fullWidth
                   margin="normal"
+                  required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   sx={{
@@ -398,6 +398,7 @@ const Loginpage: React.FC = () => {
                       textDecoration: "underline",
                       "&:hover": { color: "red" },
                     }}
+                    onClick={ () => navigate("/forgotpasswordmail")}
                   >
                     Forgot password?
                   </Typography>
@@ -482,6 +483,7 @@ const Loginpage: React.FC = () => {
                   variant="outlined"
                   fullWidth
                   margin="normal"
+                  required
                   value={user.username}
                   onChange={(e) => setUser({ ...user, username: e.target.value })}
                   sx={{
@@ -504,6 +506,7 @@ const Loginpage: React.FC = () => {
                   type="email"
                   fullWidth
                   margin="normal"
+                  required
                   value={user.email}
                   onChange={(e) => setUser({ ...user, email: e.target.value })}
                   sx={{
@@ -522,6 +525,7 @@ const Loginpage: React.FC = () => {
                   type="password"
                   fullWidth
                   margin="normal"
+                  required
                   value={user.password}
                   onChange={(e) => setUser({ ...user, password: e.target.value })}
                   sx={{
