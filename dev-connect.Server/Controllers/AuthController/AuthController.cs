@@ -23,6 +23,17 @@ namespace dev_connect.Server.Controllers.AuthController
             return Ok(response);
         }
 
+        [HttpPost]
+        [Route("auth/google-login")]
+        public IActionResult GoogleLogin([FromBody] GoogleLoginDto request)
+        {
+            if (string.IsNullOrWhiteSpace(request.IdToken))
+                return BadRequest("Missing idToken");
+
+            var jwt = _authservice.LoginWithGoogle(request.IdToken);
+            return Ok(jwt);
+        }
+
         
         [HttpPost]
         [Route("/auth/register")]
@@ -32,7 +43,7 @@ namespace dev_connect.Server.Controllers.AuthController
             return Ok(new GenericApiResponse<string>(true, response ? "User Create Successfully" : "Failed to Create User"));
 
         }
-        
+
         [HttpGet]
         [Route("/auth/verify-email")]
         public IActionResult VerifyEmail([FromQuery] string token)
@@ -74,7 +85,7 @@ namespace dev_connect.Server.Controllers.AuthController
                 var result = _authservice.ResetPassword(request.Token, request.NewPassword);
                 return Ok(new GenericApiResponse<string>(true, "Password reset successful"));
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(new GenericApiResponse<string>(false, ex.Message));
             }

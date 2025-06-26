@@ -25,6 +25,31 @@ export const loginUser = createAsyncThunk<string, { userName: string; password: 
   }
 }
 );
+
+export interface GoogleLoginParams {
+  idToken : string;
+}
+
+export const googleLogin = createAsyncThunk<string, GoogleLoginParams>(
+  "auth/googleLogin",
+  async ({idToken}, {rejectWithValue}) => {
+    try{
+      const response = await axios.post(
+        "/auth/google-login",
+        {idToken},
+        {
+          headers : {
+            "Content-Type" : "application/json",
+            Accept: "*/*",
+          },
+        }
+      );
+      return response.data;
+    } catch(error: any) {
+      return rejectWithValue(error.response?.data?.message || "Google login failed");
+    }
+  }
+)
 export const registerUser = createAsyncThunk<string, UserCreateParams>(
   'registerUser',
   async (userData, { rejectWithValue }) => {
