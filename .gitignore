@@ -8,3 +8,5 @@ dev-connect.Server/bin/Debug/
 .vs/dev-connect/DesignTimeBuild/.dtbcache.v2
 .vs/dev-connect/
 dev-connect.client/obj/Debug/
+.vs/dev-connect/v17/DocumentLayout.backup.json
+.vs/dev-connect/v17/DocumentLayout.json

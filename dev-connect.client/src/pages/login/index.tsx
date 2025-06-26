@@ -7,9 +7,9 @@ import {  loginUser, registerUser } from "../../redux/thunk/jwtVerify";
 import { ToastContainer, toast } from "react-toastify";
 import {  useNavigate } from "react-router";
 import {  UserGetByUserName } from "../../redux/thunk/user";
-import { setJwtPayload, type DecodedToken } from "../../redux/slices/loginUser";
-import { jwtDecode } from "jwt-decode";
-import { setUserProfile } from "../../redux/slices/users";
+  import { setJwtPayload, type DecodedToken } from "../../redux/slices/loginUser";
+  import { jwtDecode } from "jwt-decode";
+ import { setUserProfile } from "../../redux/slices/users";
 
 type GhostCursorOptions = {
   element?: HTMLElement;
@@ -179,15 +179,16 @@ const Loginpage: React.FC = () => {
         setUserName("");
         setPassword("");
 
-
         const jwt = response.payload as string;
-        const decodedToken = jwtDecode<DecodedToken>(jwt);
+         const decodedToken = jwtDecode<DecodedToken>(jwt);
+         console.log(decodedToken);
+         
 
-        await dispatch(
-          UserGetByUserName({username: decodedToken.UserData.UserName})
+         await dispatch(
+          UserGetByUserName({username: decodedToken.userData.UserName})
         );
-        dispatch(setUserProfile(decodedToken.UserData));
-        dispatch(setJwtPayload(decodedToken));
+        dispatch(setUserProfile(decodedToken.userData));
+         dispatch(setJwtPayload(decodedToken));
         navigate("/home");
       } else {
         const errorMessage = response.payload as string;
@@ -197,6 +198,25 @@ const Loginpage: React.FC = () => {
       toast.error("login failed");
     }
   };
+
+  //   const onLoginSubmit = async () => {
+  //   try {
+  //     const response = await dispatch(loginUser({userName: userName, password}));
+  //     if(response.type === "loginUser/fulfilled") {
+  //       toast.dismiss();
+  //       toast.success("Login Sucessfully");
+  //       setUserName("");
+  //       setPassword("");
+  //       navigate("/home")
+  //     }
+  //     else {
+  //       const errorMessage = response.payload as string;
+  //       toast.error(errorMessage);
+  //     }
+  //   } catch {
+  //     toast.error("login failed")
+  //   }
+  // }
   const onRegisterSubmit = async () => {
       try {
         await dispatch(registerUser(user as UserCreateParams)).unwrap();
