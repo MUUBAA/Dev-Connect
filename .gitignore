@@ -1,12 +1,13 @@
-dev-connect.Server/obj/
-dev-connect.Server/bin/Debug/
 .vs/
+.vscode/
 
-.vs/dev-connect/v17/.futdcache.v2
-.vs/dev-connect/FileContentIndex/f42da930-868c-403b-bd84-1a1557e8934b.vsidx
-.vs/dev-connect/v17/.suo
-.vs/dev-connect/DesignTimeBuild/.dtbcache.v2
-.vs/dev-connect/
-dev-connect.client/obj/Debug/
-.vs/dev-connect/v17/DocumentLayout.backup.json
-.vs/dev-connect/v17/DocumentLayout.json
+dev-connect.client/.DS_Store
+dev-connect.client/node_modules/
+dev-connect.client/dist/
+dev-connect.client/obj/
+dev-connect.client/obj/Debug/*
+dev-connect.server/obj/
+dev-connect.server/bin/
+dev-connect.client/yarn.lock
+dev-connect.client/package-lock.json
+dev-connect.client/obj/Debug/package.g.props
