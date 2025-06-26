@@ -86,12 +86,10 @@ namespace dev_connect.Server.Services.AuthService
                  .WithAlgorithm(new HMACSHA256Algorithm())
                  .WithSecret(_JWTSecret)
                  .AddClaim("exp", DateTimeOffset.UtcNow.AddDays(expiryInDays).ToUnixTimeSeconds())
-                 .AddClaim("email", param.Email)
-                 .AddClaim("displayName", param.DisplayName)
-                 .AddClaim("username", param.UserName)
+                 .AddClaim("userData", param)
                  .AddClaim("issuedAt", new DateTimeOffset(param.CreatedAt).ToUnixTimeSeconds())
                  .AddClaim(JwtRegisteredClaimNames.Jti, param.UserName)
-                 .AddClaim(ClaimTypes.NameIdentifier, param.Email)
+                 .AddClaim(ClaimTypes.NameIdentifier, param.Email.ToString())
                  .Encode();
 
             return token;

@@ -78,6 +78,7 @@ const userSlice = createSlice({
      .addCase(UserGetByUserName.fulfilled, (state, action) => {
         state.loading = false;
         state.userAccount = action.payload.data
+        console.log(action.payload.data)
      })
      .addCase(UserGetByUserName.rejected, (state, action) => {
         state.loading = false;

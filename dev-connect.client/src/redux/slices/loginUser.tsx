@@ -13,7 +13,7 @@ export interface  UserData {
 
 export interface DecodedToken {
     exp: number;
-    UserData: UserData;
+    userData: UserData;
     IssuedAt: number;
     jti: string
     "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": string;

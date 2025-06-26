@@ -45,7 +45,6 @@ export const UserCreate = createAsyncThunk<any, UserCreateParams>(
 );
 
 
-
 export interface UserGetByUserNameParams {
     username : string;
 };
