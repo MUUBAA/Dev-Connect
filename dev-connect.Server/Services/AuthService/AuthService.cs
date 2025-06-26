@@ -7,6 +7,7 @@ using dev_connect.Server.Data.Entities.Users;
 using dev_connect.Server.Services.MessageService;
 using dev_connect.Server.Services.UserService;
 using dev_connect.Server.Utils;
+using Google.Apis.Auth;
 using JWT.Algorithms;
 using JWT.Builder;
 using Microsoft.AspNetCore.Identity;
@@ -18,6 +19,7 @@ namespace dev_connect.Server.Services.AuthService
     public interface IAuthService
     {
         string Login(string userName, string password);
+        string LoginWithGoogle(string idToken);
         bool Register(RegisterUserDto userDto);
         bool ForgotPassword(string email);
         public bool ResetPassword(string token, string newPassword);
@@ -127,6 +129,47 @@ namespace dev_connect.Server.Services.AuthService
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
+        }
+
+        public string LoginWithGoogle(string idToken)
+        {
+            try
+            {
+                var payload = GoogleJsonWebSignature
+                    .ValidateAsync(idToken, new GoogleJsonWebSignature.ValidationSettings
+                    {
+                        Audience = new[] { _configuration["Google:ClientId"] }
+                    }).Result;
+
+                var existingUser = _userService.GetUserByEmail(payload.Email);
+
+                if(existingUser == null)
+                {
+                    var newUser = new UserContract
+                    {
+                        Email = payload.Email,
+                        UserName = payload.Email.Split('@')[0],
+                        Name = payload.Name,
+                        AuthProvider = "Google",
+                        Password = new PasswordHasher<UserContract>().HashPassword(null, Guid.NewGuid().ToString())
+                    };
+                    _userService.CreateUser(newUser);
+                    existingUser = _userService.GetUserByEmail(payload.Email);
+                }
+                var token = GenerateToken(new JWTUserParam
+                {
+                    Email = existingUser.Email,
+                    DisplayName = existingUser.Name,
+                    UserName = existingUser.UserName,
+                    CreatedAt = existingUser.Createdt
+                }, 2);
+
+                return token;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Google login failed", ex);
+            }
         }
 
         public bool ResetPassword(string token, string newPassword)
