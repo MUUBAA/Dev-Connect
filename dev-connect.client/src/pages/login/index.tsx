@@ -3,13 +3,14 @@ import React, { useState, useEffect } from "react";
 import "./login.css"; // Import the CSS file for flip-card styles
 import { useDispatch } from "react-redux";
 import type { AppDispatch, } from "../../redux/stores";
-import {  loginUser, registerUser } from "../../redux/thunk/jwtVerify";
+import {  googleLogin, loginUser, registerUser } from "../../redux/thunk/jwtVerify";
 import { ToastContainer, toast } from "react-toastify";
 import {  useNavigate } from "react-router";
 import {  UserGetByUserName } from "../../redux/thunk/user";
   import { setJwtPayload, type DecodedToken } from "../../redux/slices/loginUser";
   import { jwtDecode } from "jwt-decode";
  import { setUserProfile } from "../../redux/slices/users";
+import type { CredentialResponse } from "google-one-tap";
 
 type GhostCursorOptions = {
   element?: HTMLElement;
@@ -199,24 +200,33 @@ const Loginpage: React.FC = () => {
     }
   };
 
-  //   const onLoginSubmit = async () => {
-  //   try {
-  //     const response = await dispatch(loginUser({userName: userName, password}));
-  //     if(response.type === "loginUser/fulfilled") {
-  //       toast.dismiss();
-  //       toast.success("Login Sucessfully");
-  //       setUserName("");
-  //       setPassword("");
-  //       navigate("/home")
-  //     }
-  //     else {
-  //       const errorMessage = response.payload as string;
-  //       toast.error(errorMessage);
-  //     }
-  //   } catch {
-  //     toast.error("login failed")
-  //   }
-  // }
+ useEffect(() => {
+    /* Initialize the Google Sign-In API */
+    window.google?.accounts.id.initialize({
+      client_id: "106820681073-nbsld58gjtbtic3k2cl58re04ddjlol5.apps.googleusercontent.com", // ⬅️ Replace with your real client ID
+      callback: async (response: CredentialResponse) => {
+        const result = await dispatch(googleLogin({ idToken: response.credential }));
+        if (googleLogin.fulfilled.match(result)) {
+          toast.success("Google login successful");
+          localStorage.setItem("jwtToken", result.payload);
+          navigate("/home")
+          // Redirect or handle user session
+        } else {
+          toast.error("Google login failed");
+        }
+      },
+    });
+     window.google?.accounts.id.renderButton(
+      document.getElementById("googleSignInDiv")!,
+      {
+        theme: "outline",
+        size: "large",
+        type: "standard",
+      }
+    );
+  }, [dispatch]);
+
+
   const onRegisterSubmit = async () => {
       try {
         await dispatch(registerUser(user as UserCreateParams)).unwrap();
@@ -423,6 +433,7 @@ const Loginpage: React.FC = () => {
                     Forgot password?
                   </Typography>
                 </Box>
+                <div id="googleSignInDiv"></div>;
               </Box>
             </div>
             {/* Sign Up Side */}
@@ -583,6 +594,7 @@ const Loginpage: React.FC = () => {
                 >
                   Submit
                 </Button>
+                <div id="googleSignInDiv"></div>
               </Box>
             </div>
           </div>

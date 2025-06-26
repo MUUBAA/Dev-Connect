@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { ForgotPassword, loginUser } from "../thunk/jwtVerify";
+import { ForgotPassword, loginUser, resetPassword } from "../thunk/jwtVerify";
 import { encrypt } from "../../utils/encryptionUtils";
 
 
@@ -78,6 +78,16 @@ const loginSlice = createSlice ({
             .addCase(ForgotPassword.rejected, (state, action) => {
                 state.loading = false;
                 state.forgotPasswordSucess = false;
+                state.error = action.payload as string;
+            })
+             .addCase(resetPassword.pending, (state) => {
+                state.loading = true;
+            })
+            .addCase(resetPassword.fulfilled, (state) => {
+                state.loading = false;
+            })
+            .addCase(resetPassword.rejected, (state, action) => {
+                state.loading = false;
                 state.error = action.payload as string;
             })
     },
